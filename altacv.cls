@@ -205,9 +205,11 @@
   %\smallskip
 }
 
-\newcommand{\cvproject}[1]{%
+\newcommand{\cvproject}[2]{%
   {\textbf{\color{accent}#1}\par}
   \smallskip\normalsize
+  \ifstrequal{#2}{}{}{{\small\makebox[0.5\linewidth][l]{\faCalendar\hspace{0.5em}#2}}}%
+  \medskip\normalsize
 }
 
 \newcommand{\cvtag}[1]{%
